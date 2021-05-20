@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Tetrogen</title>
+
+    <!-- Fonts -->
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" lang="ru" content="">
+    <!-- <meta name="viewport" content="width=480"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="MobileOptimized" content="true">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#da532c">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Connect CSS files -->
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	
+<!-- INTH_SNIPPET_TOP -->
+</head>
+
+<body>
+<div style="display: none;" id="success-send">
+  <div class="forma center">               
+    <div class="lh140 px40">Ваш заказ успешно отправлен!</div>
+  </div>
+</div>
+
+    <div style="display: none;" id="hidden-content">
+        <div class="forma">
+            <form name="form" id="form" class="orderForm" method="post">
+                <div class="desc white center px30 blg">Оформите заявку и наш специалист свяжется с вами в ближайшее&nbsp;время</div>
+                <input placeholder="Ваше имя:" type="text" name="name" maxlength="30" class="name">
+                <input placeholder="Ваш телефон:" type="text" name="phone" required minlength="10" maxlength="20" class="phone">
+                <button class="btn px30 bold upp white blg">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div id="policy" style="display: none;" >
+        <div class="px42 lh140 center">
+            <p>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+        </div>
+        <div >
+            <p class="px18 lh120">1. <b>Введение.</b> Настоящая Политика определяет принципы, порядок и условия обработки персональных данных пользователей сайта www.Tetrogen.ru, с целью обеспечения защиты прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну, а также устанавливает ответственность должностных лиц предприятия, имеющих доступ к персональным данным, за невыполнение требований норм, регулирующих обработку и защиту персональных данных. </p>
+            <p class="px18 lh120">2. <b>Понятие и состав персональных данных.</b> Для регистрации посетителю требуется предоставить в распоряжение сайта некоторые персональные данные, являющиеся необходимыми для оформления заказа на приобретение товаров. Персональными данными принято считать любые сведения, относящиеся к конкретному человеку и дающие возможность идентифицировать его личность. Исключение составляет лишь информация, распространение которой допускается законодательством РФ. Предметом политики конфиденциальности сайта www.Tetrogen.ru является любая персональная информация, требующаяся для обеспечения возможности предоставления услуг пользователю, которую тот сообщает в процессе регистрации или же при оформлении заказа. К таким данным, прежде всего, относятся: имя пользователя, его электронный адрес (e-mail), контактный телефон, а также адрес доставки товара и информация о банковской карте. Помимо этого, защите также подлежат данные, автоматически получаемые сайтом при посещении пользователем его страниц: время доступа, данные об операционной системе, IP-адрес, история покупок, информация из cookies, адреса посещенных страниц. </p>
+            <p class="px18 lh120">3. <b>Сроки обработки персональных данных.</b> Персональные данные обрабатываются в течение неопределенного срока, до прекращения действия лицензий на осуществление лицензируемых видов деятельности. Так же обработка персональных данных может быть прекращена по Вашему запросу путем направления письменного заявления на адрес <a href="mailto:info@tetrogen.ru">info@tetrogen.ru</a>. В случае отзыва субъектом персональных данных согласия на обработку персональных данных ООО «МТ-Маркетинг» вправе продолжить обработку персональных данных без согласия субъекта персональных данных при наличии оснований, указанных в п. 2–11 части 1 статьи 6, части 2 статьи 10 Федерального закона № 152-ФЗ «О персональных данных». </p>
+         <p class="px18 lh120">4. <b>Права и обязанности.</b> В ходе обработки ООО «МТ-Маркетинг» имеет право совершать с персональными данными следующие действия:</p>
+            <ul class="px18 lh120">
+              <li>собирать, записывать, систематизировать, накапливать, хранить, уточнять, извлекать, использовать, передавать для того, чтобы изучать потребности клиентов и повышать качество своих продуктов и услуг, обезличивать, блокировать, удалять, уничтожать; </li>
+              <li>отстаивать свои интересы в суде; </li>
+              <li>предоставлять персональные данные субъектов третьим лицам, если это предусмотрено действующим законодательством (налоговые, правоохранительные органы и др.);</li>
+              <li>отказывать в предоставлении персональных данных в случаях, предусмотренных законодательством;  </li>
+              <li>использовать персональные данные субъекта без его согласия, в случаях, предусмотренных законодательством.</li>
+            </ul>
+            <p class="px18 lh120">Субъект персональных данных имеет право: – требовать уточнения своих персональных данных, их блокирования или уничтожения в случае, если персональные данные являются неполными, устаревшими, недостоверными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав; – требовать перечень своих персональных данных, обрабатываемых предприятием и источник их получения; – получать информацию о сроках обработки своих персональных данных, в том числе о сроках их хранения.</p>
+            <p class="px18 lh120">5. <b>Цели обработки персональных данных.</b> Обработка персональных данных осуществляется в целях эффективного исполнения заказов и иных обязательств, принятых в качестве обязательных для исполнения перед пользователем. Персональные данные клиента на сайте www.Tetrogen.ru могут использоваться для: 
+            <ul class="px18 lh120">
+              <li>Идентификации пользователя, оформления заказа, обработки платежа; </li>
+              <li>Предоставления доступа к персонализированной информации на сайте; </li>
+              <li>Установления обратной связи с целью обработки заявок, уведомления о состоянии заказа, оказания помощи в вопросах, связанных с пользованием услугами, предоставления (с согласия пользователя) информации о ценах, акциях, специальных предложениях, обновлении продукции; </li>
+              <li>Периодического направления пользователю информации о событиях и новостях нашего Сайта </li>
+              <li>Предоставления (при необходимости) пользователю технической или клиентской поддержки; </li>
+              <li>Осуществления (с согласия пользователя) рекламной деятельности. </li>
+            </ul>
+            <p class="px18 lh120">Если Вы в какой-либо момент пожелаете прекратить получение наших рассылок, Вы можете отказаться от их получения, следуя инструкциям, содержащимся в каждой из рассылок. </p>
+            <p class="px18 lh120">6. <b>Обеспечение безопасности персональных данных.</b> ООО «Фармацевтический холдинг Джи Эл Эс Медикал» тщательно оберегает данные клиентов, не продает их и не передает третьим лицам. Исключение составляют лишь некоторые персональные данные, передающиеся службам курьерской доставки, почтовым компаниям, операторам электросвязи для организации доставки товара. Передача персональных данных третьим лицам осуществляется на основании законодательства Российской Федерации или с согласия субъекта персональных данных. ООО «Фармацевтический холдинг Джи Эл Эс Медикал» сохраняет за собой право раскрыть персональные данные уполномоченным органам власти в предусмотренных законодательством РФ случаях или же на основании решения суда. Помимо этого, раскрытие подобной информации может быть осуществлено для защиты прав и собственности компании, а также в целях обеспечения личной безопасности ее сотрудников.</p>
+            <p class="px18 lh120">7. <b>Заключительные положения.</b> Настоящая Политика является внутренним документом компании, является общедоступной и подлежит размещению на сайте ООО «МТ-Маркетинг».</p>
+            <p class="px18 lh120">Настоящая Политика подлежит изменению, дополнению в случае появления новых законодательных актов и специальных нормативных документов по обработке и защите персональных данных. </p>
+            <p class="px18 lh120">Контроль исполнения требований настоящей Политики осуществляется ответственным за организацию обработки персональных данных. </p>
+            <p class="px18 lh120">Ответственность должностных лиц, имеющих доступ к персональным данным, за невыполнение требований норм, регулирующих обработку и защиту персональных данных, определяется в соответствии с законодательством Российской Федерации. </p>
+            <p class="px18 lh120">Используя услуги и предоставляя информацию, необходимую для инициирования дальнейшего взаимодействия, пользователь сайта выражает согласие на использование персональных данных в соответствии с настоящей Политикой конфиденциальности.</p>      
+        </div>
+    </div>  
+    <header>
+        <div class="wrap">
+            <ul class="flex flex-between flex-mid blue px22">
+                <li>
+                    <img src="assets/images/logo.png" alt="">
+                </li>
+                <li class="upp lh120">
+                    <a href="#ing">ингредиенты</a>
+                </li>
+                <li class="upp lh120">
+                    <a href="#search">исследования</a>
+                </li>
+                <li class="upp lh120">
+                    <a href="#review">отзывы</a>
+                </li>
+
+                <li class="upp lh120 hrb">
+                    <a data-fancybox data-src="#hidden-content" href="javascript:;" class="btn">заказать</a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="block1">
+            <div class="wrap flex flex-left">
+                <div class="box center flex flex-right flex-wrap">
+                    <div class="title white hrbl px58 upp alleft lh120 flex flex-left flex-wrap flex-mid">
+                        <div class="txt"><span class="blue">Tetrogen - быстрый</span>
+                            <br><span class="bglr2">старт к&nbsp;снижению веса</span></div>
+                    </div>
+                    <!-- <div class="shtamp"><img src="assets/images/shtamp.png" alt=""></div> -->
+                    <form name="form" class="orderForm" method="post">
+                        <p class="center p1">
+                            <span class="px32 blue hrb">Успейте заказать</span>
+                            <br>
+                            <span class="white px30 upp hrbl bglr1">Tetrogen по акции<sup>*</sup></span>
+                        </p>
+                        <!-- <div id="countbox" class="timerbox flex flex-between sgb"></div> -->
+                        <input placeholder="Ваше имя:" type="text" name="name" maxlength="30" id="name" class="name">
+                        <input placeholder="Ваш телефон:" type="text" name="phone" id="phone" required="" minlength="10" maxlength="20" class="phone">
+
+                        <button class="button upp white hrbl px24">заказать<img src="assets/images/btn-arr.png" alt=""></button>
+                        <p class="pack hrl px16 upp">осталось <span class="hrbl"><span class="left-pack">3</span> упаковки</span> по акции*</p>
+                        <p class="akcia hrl px18 black center">*при заказе курса</p>
+                        
+                    </form>
+                    <div class="arr"><img src="assets/images/mango.png" alt=""></div>
+                    <div class="box2"><img src="assets/images/box-new.png" alt="">
+                        <div class="sticker px20 center hrb lh140 white flex flex-mid flex-center">
+                            <p><span class="upp px32">Акция!<sup>*</sup></span>
+                                <br>Всего за 1 руб!
+                                <br><span class="through hrr">2300 руб.</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="block2">
+            <div class="wrap">
+                <div class="title upp hrbl center px44 lh120">Ваша новая жизнь <span class="black bglr3">в&nbsp;стройном&nbsp;теле!</span></div>
+                <div class="super px18 lh120 hrb center blue flex flex-around flex-wrap">
+                    <div class="sp">
+                        <div>
+                            <img src="assets/images/sp-1.png" alt="">
+                            <p>Сжигает жир<br>24/7</p>
+                        </div>
+                    </div>
+                    <div class="sp">
+                        <div>
+                            <img src="assets/images/sp-2.png" alt="">
+                            <p>Ускоряет метаболизм</p>
+                        </div>
+                    </div>
+                    <div class="sp">
+                        <div>
+                            <img src="assets/images/sp-3.png" alt="">
+                            <p>Снижает<br>аппетит</p>
+                        </div>
+                    </div>
+                    <div class="sp">
+                        <div>
+                            <img src="assets/images/sp-4.png" alt="">
+                            <p>Уменьшает проблемные<br>зоны</p>
+                        </div>
+                    </div>
+                    <div class="sp">
+                        <div>
+                            <img src="assets/images/sp-5.png" alt="">
+                            <p>Снижает вес</p>
+                        </div>
+                    </div>
+                    <div class="sp">
+                        <div>
+                            <img src="assets/images/sp-6.png" alt="">
+                            <p>Уменьшает целлюлит</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block3">
+            <div class="box-products flex flex-center flex-mid flex-wrap">
+                <div class="day flex flex-row flex-mid">
+                    <div class="box flex">
+                        <div><img src="assets/images/box-day.png" alt=""></div>
+                        <div class="info">
+                            <div class="title flex flex-left flex-mid">
+                                <div><img src="assets/images/sun.png" alt=""></div>
+                                <div class="text white lh130 px24 hrb">Тетроген День –
+                                    <br><span class="blue">заряжает энергией</span>
+                                </div>
+                            </div>
+                            <div class="ramka px21 lh120">
+                                <p>Направлен на <span class="hrb">активное жиросжигание в течение дня</span>, и <span class="hrb">ускорению метаболизма</span> на клеточном уровне. <span class="hrb">Повышает уровень энергии</span>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="night flex flex-row flex-mid">
+                    <div class="box flex">
+                        <div><img src="assets/images/box-night.png" alt=""></div>
+                        <div class="info">
+                            <div class="title flex flex-left flex-mid">
+                                <div><img src="assets/images/moon.png" alt=""></div>
+                                <div class="text white lh130 px24 hrb">Тетроген Ночь –
+                                    <br><span class="blue"><nobr>улучшает качество сна</nobr></span>
+                                </div>
+                            </div>
+                            <div class="ramka px21 lh120">
+                                <p>Направлен на продление процесса <span class="hrb">расщепления жиров ночью</span>. Дополнительно Тетроген Ночь <span class="hrb">улучшает качество сна и устраняет излишнюю возбудимость</span>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block4">
+            <div class="wrap">
+                <div class="title upp hrbl center px44 lh120">Избавьтесь от лишнего&nbsp;веса
+                    <br><span class="black bglr3">за курс применения!</span></div>
+                <div class="box flex flex-between flex-mid">
+                    <div class="img">
+                        <img src="assets/images/stomach.jpg" alt="">
+                    </div>
+                    <div class="info px22 lh140">
+                        <p class="px24"><span class="bglr3 hrb">Tetrogen – жиросжигающий комплекс</span>, который дает стабильный результат похудения утех, кто его принимает*. Чтобы запустить <span class="bglr3 hrb">расщепление жира на клеточном уровне</span>. Tetrogen ускоряет метаболизм человека.</p>
+                        <div class="white-box flex flex-mid flex-between">
+                            <div class="img"><img src="assets/images/caps.png" alt=""></div>
+                            <div class="text">
+                                <p>Умная формула комплекса особенно <br><span class="hrb">интенсивно воздействует на места наибольших жировых скоплений – живот</span>, <span class="hrb">руки</span>, <span class="hrb">бока</span>, <span class="hrb">внутренние поверхности бедер</span>.</p>
+                            </div>
+                        </div>
+                        <p>* Согласно проведенным исследованиям с помощью Tetrogen похудели 97% участвующихв исследованиях добровольцев.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block8" id="ing">
+            <div class="wrap">
+                <div class="title upp hrbl px45 black center lh120"><span class="bglr3">100% натуральный состав</span><br> <span class="blue">и вегетарианские капсулы</span></div>
+
+                <div class="block px24 center lh140 white">Экстракты перца, африканского манго, циссуса и дихростахиса активируют процесс растопки жира, нормализуют уровень сахара и холестерина в крови, ускоряют обменные процессы и помогают обрести стройность без стресса.</div>
+
+                <div class="ingr i4 flex flex-left">
+
+                    <div class="box">
+                        <img src="assets/images/ing4.jpg" alt="">
+                        <div class="num"><img src="assets/images/num1.png" alt=""></div>
+                    </div>
+
+                    <div class="txt rel">
+                        <div class="name px30 lh120 hrbl">
+                            <span class="orange">Экстракт африканского манго. </span>
+                            <br>Запатентованная формула - IGOB-131
+                        </div>
+
+                        <ul class="px22 rel">
+                            <li>Усиливает обмен веществ</li>
+                            <li>Расщепляет жировые отложения </li>
+                            <li>Снижает чувство голода и тягу к сладкому</li>
+                            <!-- <div class="shtamp"></div> -->
+                        </ul>
+                    </div>
+
+                </div>
+
+                
+                
+                <div class="ingr i3 flex flex-right">
+                    <div class="box">
+                        <img src="assets/images/ing3.jpg" alt="">
+                        <div class="num"><img src="assets/images/num4.png" alt=""></div>
+                    </div>
+                    <div class="txt rel">
+                        <div class="name px30 lh120 hrbl">
+                            <span class="orange">Экстракт дихростахиса.</span>
+                            <br>Запатентованная формула - Dyg-400
+                        </div>
+                        <ul class="px22 rel">
+                            <li>Замедляет усвоение углеводов и сахара</li>
+                            <li>Усиливает распад жировых клеток</li>
+                            <li>Блокирует образование новых жировых клеток</li>
+                            <!-- <div class="shtamp"></div> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="ingr i1 flex flex-left">
+
+                    <div class="box">
+                        <img src="assets/images/ing1.jpg" alt="">
+                        <div class="num"><img src="assets/images/num2.png" alt=""></div>
+                    </div>
+
+                    <div class="txt rel">
+                        <div class="name px30 lh120 hrbl">
+                            <span class="orange">Экстракт Циссуса четырехугольного.</span> Запатентованная формула - CQR-300
+                        </div>
+
+                        <ul class="px22 rel">
+                            <li>Уменьшает подкожный и абдоминальный жир</li>
+                            <li>Борется с целлюлитом и растяжками</li>
+                            <li>Препятствует появлению отечности</li>
+                            <!-- <div class="shtamp"></div> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ingr i2 flex flex-right">
+
+                    <div class="box">
+                        <img src="assets/images/ing2.jpg" alt="">
+                        <div class="num"><img src="assets/images/num3.png" alt=""></div>
+                    </div>
+
+                    <div class="txt rel">
+                        <div class="name px30 lh120 hrbl">
+                            <span class="orange">Экстракт стручкового перца. </span><br> Запатентованная формула - Lipofuel
+                        </div>
+
+                        <ul class="px22 rel lh120">
+                            <li>Повышает биодоступность всех компонентов комплекса</li>
+                            <li>Нормализует уровень холестерина в крови</li>
+                            <li>Усиливает мышцы и повышает рельефность тела</li>
+                            <!-- <div class="shtamp"></div> -->
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+                <div class="ingr i5">
+                    <div class="box">
+                        <img src="assets/images/ing5.jpg" alt="">
+                        <div class="num"><img src="assets/images/num5.png" alt=""></div>
+                    </div>
+
+                    <div class="txt rel">
+                        <div class="name px30 lh120 hrbl">
+                            <span class="orange">Экстракт кофеина</span> <br>(только&nbsp;в Тетроген День)
+                        </div>
+
+                        <ul class="px22 rel">
+                            <li>Переводит жиры, белки и углеводы в энергию</li>
+                            <li>Повышает работоспособность и улучшает настроение</li>
+                            <li>Подтягивает и разглаживает кожу</li>
+                            <!-- <div class="shtamp"></div> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="ingr i6 flex flex-right">
+
+                    <div class="box">
+                        <img src="assets/images/ing6.png" alt="">
+                        <div class="num"><img src="assets/images/num6.png" alt=""></div>
+                    </div>
+
+                    <div class="txt rel">
+                        <div class="name px30 lh120 hrbl">
+                            <span class="orange">Экстракт пустырника </span><br> (только Тетроген Ночь)
+                        </div>
+
+                        <ul class="px22 rel lh120">
+                            <li>Успокаивает нервную систему </li>
+                            <li>Нормализует сердечный ритм</li>
+                            <li>Обеспечивает глубокий оздоровляющий сон</li>
+                            <!-- <div class="shtamp"></div> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block12" >
+            <div class="wrap">
+                <div class="box">
+                    <div class="title px32 hrbl lh120 center upp">Мнение эксперта в снижении веса</div>
+                    <div class="flex flex-between flex-wrap">
+                        <div class="ava"><img src="assets/images/doc.jpg" alt=""></div>
+                        <div class="txt px21 hrl lh140">
+                            <p class="px24"><span class="hrb bglr3">«Tetrogen – открытие последних лет,</span> <span class="hrb">которое бьет рекорды по результативности.</span> Весь секрет в том, что он помогает худеть всем! Поскольку <span class="hrb">комплекс направлен на раскрутку метаболизма в области расщепления жиров</span>, и его действие не зависит ни от индивидуальных особенностей человека, ни от причин, почему он набрал вес. <span class="hrb bglr3">Правило простое: если вы начали принимать «Tetrogen» курсом, то точно похудеете.</span> Некоторые худеют быстрее, некоторые медленнее, но это происходит у всех. Именно поэтому мне нравится «Tetrogen». А также тем, что это <span class="hrb bglr3">полностью  натуральный комплекс</span>, несодержащий никакой химии. <span class="hrb">С ним похудеть можно без вреда для здоровья»</span>.</p>
+                            <p class="hrbl name">Алешина М. В., эксперт в снижении веса.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block5">
+            <div class="wrap">
+                <div class="px45 hrbl lh120 center upp">Как принимать Tetrogen,&nbsp;чтобы <br> <span class="bglr3 black">похудеть максимально быстро?</span></div>
+                <div class="box-capsules px18 lh140 black flex flex-around flex-mid">
+                    <div class="caps-day rel">
+                        <img class="abs" src="assets/images/caps-day.png" alt="«Тетроген День»">
+                        <p><span class="hrbl bglr3">По 1 капсуле «Тетроген День»</span><br> ежедневно в&nbsp;первой половине&nbsp;дня</p>
+                    </div>
+                    <div class="caps-night rel">
+                        <img class="abs" src="assets/images/caps-night.png" alt="«Тетроген Ночь»">
+                        <p><span class="hrbl bglr3">По 1 капсуле «Тетроген Ночь»</span><br> ежедневно вечером</p>
+                    </div>
+                </div>
+                <div class="white-box px24">
+                    <p class="hrbl center lh120"><span class="bglr3">Не пропускать прием!</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="block9" id="search">
+            <div class="wrap">
+                <div class="box-week flex flex-between flex-wrap">
+                    <div class="week week1 flex flex-top flex-around">
+                        <div class="photo"><img src="assets/images/wm1.png" alt=""></div>
+                        <div class="info center white px18 lh140 hrb">
+                            <span class="title px30 orange upp lh120">1 неделя.</span>
+                            <p>Усиление метаболизма, активизация процесса жиросжигания</p>
+                            <span class=" px30 black upp lh120 bglr3">Минус 2-3&nbsp;кг.<sup>*</sup></span>
+                            <p class="hrr"><sup>*</sup>Зависит от Вашего текущего&nbsp;веса.</p>
+                        </div>
+                    </div>
+                    <div class="week week2 flex flex-top flex-around">
+                        <div class="info center px18 lh140 hrb">
+                            <span class="title px30 orange upp lh120">2 неделя.</span>
+                            <p>Активное расщепление <br>жиров во всем организме</p>
+                            <span class=" px30 black upp lh120 bglr3">Минус 4-5&nbsp;кг.<sup>*</sup></span>
+                            <p class="hrr"><sup>*</sup>Зависит от Вашего текущего&nbsp;веса.</p>
+                        </div>
+                        <div class="photo"><img src="assets/images/wm2.png" alt=""></div>
+                    </div>
+                    <div class="week week3 flex flex-top flex-around">
+                        <div class="photo"><img src="assets/images/wm3.png" alt=""></div>
+                        <div class="info center px18 lh140 hrb">
+                            <span class="title px30 orange upp lh120">3 неделя.</span>
+                            <p>Жировых отложенийстановится меньше везде. Сокращение объемов тела</p>
+                            <span class=" px30 black upp lh120 bglr3">Минус 5-8&nbsp;кг.<sup>*</sup></span>
+                            <p class="hrr"><sup>*</sup>Зависит от Вашего текущего&nbsp;веса.</p>
+                        </div>
+                    </div>
+                    <div class="week week4 flex flex-top flex-around">
+                        <div class="info center px18 lh140 hrb">
+                            <span class="title px30 orange upp lh120">4 неделя.</span>
+                            <p>Моделирование тела. <br>Заметная стройность в сравнении с изначальной фигурой</p>
+                            <span class=" px30 black upp lh120 bglr3">Минус 9-12&nbsp;кг.<sup>*</sup></span>
+                            <p class="hrr"><sup>*</sup>Зависит от Вашего текущего&nbsp;веса.</p>
+                        </div>
+                        <div class="photo"><img src="assets/images/wm4.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="sub-box center">
+                    <p class="hrb white px24 lh120">В последующие недели <span class="bglr3 black">вы будете избавляться от 2&nbsp;до&nbsp;5&nbsp;кг в неделю</span> в зависимости от того, сколько жира в вас осталось.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="block6 rel">
+            <img class="abs lupa" src="assets/images/lupa.png" alt="">
+            <div class="wrap">
+                <div class="check flex flex-right flex-mid">
+                    <div class="attention hrbl">
+                        <p class="orange upp px48">Внимание!</p>
+                        <p class="blue upp px40">Остерегайтесь <br>подделок!</p>
+                        <p class="hrr lh140 px24">Ввиду высокой эффективности «Tetrogen» появилось много подделок комплекса.</p>
+                    </div>
+                    <div class="box-orig center">
+                        <p class="hrbl px34 white lh140">Заказывайте оригинальный продукт только на официальном&nbsp;сайте!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block7">
+                <div class="wrap">
+
+                    <div class="px36 hrbl lh120 center upp">Звезды Instagram <span class="bglr3">делятся своим впечатлением</span> о&nbsp;«Tetrogen»</div>
+
+                    <ul class="reviews-insta insta-slider owl-carousel center">
+                        <li>
+                            <a href="https://www.instagram.com/p/Bvb_nthBaKr/" target="_blank" class="link-insta center px20">@saimon_mardanshin</a>
+                            <a href="https://www.instagram.com/p/Bvb_nthBaKr/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta1.jpg" alt="Саймон - Участник проекта Дом 2"></a>
+                            <p class="center lh120 hrb black px18">Саймон
+                                <br><span class="px16">Участник проекта Дом&nbsp;2</span></p>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/p/B4kJHktoL9a/" target="_blank" class="link-insta center px20">@pinchuk_official</a>
+                            <a href="https://www.instagram.com/p/B4kJHktoL9a/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta12.jpg" alt="Ирина Пинчук - участник проекта дом 2"></a>
+                            <p class="center lh120 hrb black px18">Ирина Пинчук
+                                <br><span class="px16">Участник проекта Дом&nbsp;2</span></p>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/p/BmTAq9vhxQn/" target="_blank" class="link-insta center px20">@sonyabekker</a>
+                            <a href="https://www.instagram.com/p/BmTAq9vhxQn/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta2.jpg" alt="Соня Беккер - Фитнес эксперт, публичная личность"></a>
+                            <p class="center lh120 hrb black px20">Соня Беккер
+                                <br><span class="px16">Фитнес эксперт</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/BvOX7gIh9_z/" target="_blank" class="link-insta center px20">@pinchuk_official</a>
+                            <a href="https://www.instagram.com/p/BvOX7gIh9_z/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta3.jpg" alt="Ирина Пинчук - участник проекта дом 2"></a>
+                            <p class="center lh120 hrb black px18">Ирина Пинчук
+                                <br><span class="px16">Участник проекта Дом&nbsp;2</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/BwSDR0xFDCp/" target="_blank" class="link-insta center px20">@sonyabekker</a>
+                            <a href="https://www.instagram.com/p/BwSDR0xFDCp/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta4.jpg" alt="Соня Беккер - Фитнес эксперт, публичная личность"></a>
+                            <p class="center lh120 hrb black px18">Соня Беккер
+                                <br><span class="px16">Фитнес эксперт</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/BxmDdhGI2ky/" target="_blank" class="link-insta center px20">@dilya___dilya</a>
+                            <a href="https://www.instagram.com/p/BxmDdhGI2ky/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta5.jpg" alt="dilya___dilya - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">dilya___dilya
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/Bza3eLegoQ8/" target="_blank" class="link-insta center px20">@filostrata</a>
+                            <a href="https://www.instagram.com/p/Bza3eLegoQ8/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta6.jpg" alt="dilya___dilya - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">filostrata
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/BzIvTYCIwqo/" target="_blank" class="link-insta center px20">@__tvoi__narkotik__</a>
+                            <a href="https://www.instagram.com/p/BzIvTYCIwqo/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta7.jpg" alt="dilya___dilya - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">__tvoi__narkotik__
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B11YfMvo8ji/" target="_blank" class="link-insta center px20">@alleksmommy</a>
+                            <a href="https://www.instagram.com/p/B11YfMvo8ji/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta8.jpg" alt="alleksmommy - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">alleksmommy
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B1rDvghA0gD/" target="_blank" class="link-insta center px20">@lelyaa555</a>
+                            <a href="https://www.instagram.com/p/B1rDvghA0gD/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta9.jpg" alt="lelyaa555 - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">lelyaa555
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B16tbM5oD3r/" target="_blank" class="link-insta center px20">@marrusia</a>
+                            <a href="https://www.instagram.com/p/B16tbM5oD3r/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta10.jpg" alt="marrusia - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">marrusia
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B1nbt4Kn5Ku/" target="_blank" class="link-insta center px20">@ksendelin</a>
+                            <a href="https://www.instagram.com/p/B1nbt4Kn5Ku/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta11.jpg" alt="ksendelin - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">ksendelin
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B568QmPBuDh/" target="_blank" class="link-insta center px20">@red_momy</a>
+                            <a href="https://www.instagram.com/p/B568QmPBuDh/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta13.jpg" alt="red_momy - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">red_momy
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/p/B6fPbLtIWXg/" target="_blank" class="link-insta center px20">@alenatoffi_official</a>
+                            <a href="https://www.instagram.com/p/B6fPbLtIWXg/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta14.jpg" alt="alenatoffi_official - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">alenatoffi_official
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B6dQOgeobbf/" target="_blank" class="link-insta center px20">@soranges</a>
+                            <a href="https://www.instagram.com/p/B6dQOgeobbf/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta15.jpg" alt="soranges - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">soranges
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B6-stH5oqz2/" target="_blank" class="link-insta center px20">@anastasiyakonst</a>
+                            <a href="https://www.instagram.com/p/B6-stH5oqz2/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta16.jpg" alt="anastasiyakonst - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">anastasiyakonst
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p/B8RJVchhK3I/" target="_blank" class="link-insta center px20">@black_crown_official</a>
+                            <a href="https://www.instagram.com/p/B8RJVchhK3I/" target="_blank"><img class="owl-lazy" data-src="assets/images/insta17.jpg" alt="black_crown_official - инстаграм блогер"></a>
+                            <p class="center lh120 hrb black px18">black_crown_official
+                                <br><span class="px16">Инстаграм блогер</span></p>
+                        </li>
+                    </ul>
+                        
+                    <div class="px34 hrbl lh120 center upp" id="review">Покупатели, выбравшие Tetrogen, <span class="bglr3">рекомендуют его&nbsp;всем!</span></div>
+                    <div class="reviews-buyer owl-carousel px18 lh160 lgrey">
+                        <div class="buyer flex flex-mid flex-between">
+                            <div class="box-img">
+                                <img class="owl-lazy" data-src="assets/images/buyer1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <p>«Tetrogen помог мне <span class="hrb">избавиться от лишнего веса, с которым жила больше 12 лет.</span> Жирными было все – живот, ляжки, внутренние поверхности рук. Появилось это все после второй беременности. Пробовала много раз сбросить. Сидела на диетах постоянно, пила разные таблетки, но эффекта не было. А потом от знакомой я узнала о Tetrogen. Заинтересовалась, решила попробовать. <span class="orange hrb">Tetrogen буквально спас меня от лишнего веса.</span> <span class="hrb">Моя фигура снова стала стройной. Tetrogen борется с жиром неотвратимо.</span> Большое спасибо тем, кто создал этот замечательный комплекс».</p>
+                                <p class="name px22 hrb black">Марина, 42 года, Москва</p>
+                            </div>
+                        </div>
+                        <div class="buyer flex flex-mid flex-between">
+                            <div class="box-img">
+                                <img class="owl-lazy" data-src="assets/images/buyer2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <p>«Негативно относилась ко всем жиросжигающим комплексам, <span class="hrb">пока не попробовала Tetrogen.</span> Это действительно что-то с чем-то! <span class="hrb">Уже за несколько дней приема я сбросила 2 кг.</span> При этом чувствовала себя превосходно. Море энергии и хорошего настроения. И есть в эти дни не хотелось совсем! Сейчас продолжаю худеть. <span class="hrb">Каждые 3 дня встаю на весы и вижу, как вес уходит.</span> Это тот комплекс, который способен подарить стройность без вреда для здоровья. Если вы его еще не пробовали, искренне рекомендую. Посоветовала его уже своей близкой подруге, и она тоже худеет с помощью него. <span class="hrb">Это лучшее средство из всех!</span>»</p>
+                                <p class="name px22 hrb black">Светлана, 28 лет, Екатеринбург</p>
+                            </div>
+                        </div>
+                        <div class="buyer flex flex-mid flex-between">
+                            <div class="box-img">
+                                <img class="owl-lazy" data-src="assets/images/buyer3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <p>«<span class="hrb">Стала набирать вес с возрастом.</span> Как известно, это случается у многих. Раньше худела с помощью диет без проблем, <span class="hrb">но в условиях замедленного метаболизма (что и случается с возрастом), это становится крайне проблематично.</span> Пробовала другие ускорители метаболизма, но не особо помогли. <span class="hrb">Потом узнала про Tetrogen. Этот комплект отличается от всех.</span> Он заметно раскручивает обмен веществ, в результате чего ты начинаешь худеть. <span class="hrb">За 1 месяц приема с помощью него я похудела почти на 9 кг</span>, что для меня очень даже хороший результат. <span class="hrb">Плюс Tetrogen улучшает настроение и сон.</span> В целом комплекс мне очень понравился»</p>
+                                <p class="name px22 hrb black">Елена, 51 год, Курск</p>
+                            </div>
+                        </div>
+                        <div class="buyer flex flex-mid flex-between">
+                            <div class="box-img">
+                                <img class="owl-lazy" data-src="assets/images/buyer4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <p>«<span class="hrb">Отличный комплекс.</span> Очень понравился. Как и многие, решила сбросить набранный за зиму вес к лету. Ходить в тренажерный зал не хотелось (вообще не люблю спорт), поэтому решила пойти по простому пути. <span class="hrb">О Tetrogen уже слышала, что он хорошо помогает.</span> Мне он в итоге тоже помог. Даже больше, чем я рассчитывала. <span class="hrb">Я похудела на 7 кг за 2 недели!</span> Так быстро я не худела никогда! Комплекс выше всех похвал»</p>
+                                <p class="name px22 hrb black">Елена, 31 год, Москва</p>
+                            </div>
+                        </div>
+                        <div class="buyer flex flex-mid flex-between">
+                            <div class="box-img">
+                                <img class="owl-lazy" data-src="assets/images/buyer5.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <p>«<span class="hrb">Худела перед свадьбой.</span> Нужно было за 2 месяца стать стройной. Знала, что диеты мне не помогут это сделать. Поискав информацию в интернете, какие сегодня самые эффективные препараты, нашла Tetrogen. Его многие хвалили. В итоге выбрала его. <span class="hrb">За 2 месяца курсового приема я похудела на 14 кг и стала настоящей красоткой.</span> Такой худенькой я не была очень давно. Смотрю на свои фотографии и поражаюсь! Однозначно я советую этот комплекс всем! Даже родственникам своим посоветовала. <span class="hrb">Побочек от него никаких не ощутила.</span> Здоровье даже лучше стало»</p>
+                                <p class="name px22 hrb black">Кристина, 25 лет, Воронеж</p>
+                            </div>
+                        </div>
+                        <div class="buyer flex flex-mid flex-between">
+                            <div class="box-img">
+                                <img class="owl-lazy" data-src="assets/images/buyer6.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <p>«<span class="hrb">Использую комплекс Tetrogen уже 3 месяца. За это время скинула 22 кг.</span> Этот комплекс буквально спас меня, ведь от лишнего веса страдает не только личная жизнь, но и здоровье. Если вы думаете, покупать или нет, просто посмотрите на меня. <span class="hrb">Я смогла, а значит и у вас получится!</span> С Tetrogen худеть просто, даже специально на диете не надо сидеть. Просто надо пить каждый день капсулы, <span class="hrb">вес будет уходить, а чрезмерный аппетит пропадет сам по себе.</span> Очень рада, что познакомилась с этим комплексом (прописал мне его врач) и очень рада, что сегодня есть такой замечательный комплекс».</p>
+                                <p class="name px22 hrb black">Жанна, 26 лет, Ростов-на-Дону</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="block10">
+            <div class="wrap flex flex-left">
+                <div class="box center flex flex-right flex-wrap">
+                    <div class="title black hrbl px48 alleft lh120 flex flex-left flex-wrap flex-mid">
+                        <div class="txt upp"><span class="whbg">А вы готовы</span> <span class="bglr3">к&nbsp;стройности?</span>
+                        </div>
+                        <div class="black lh120 px30">
+                            <p><span class="hrb">Покоряйте своей фигурой</span> мужчин, <span class="hrb">станьте сексуальными</span> и носите те&nbsp;вещи, какие всегда хотели&nbsp;надеть!</p>
+                        </div>
+                    </div>
+
+                    <form name="form" id="form2" class="orderForm" method="post">
+                        <p class="center p1">
+                            <span class="px32 blue hrb">Успейте заказать</span>
+                            <br>
+                            <span class="white px30 upp hrbl bglr1">Tetrogen по акции<sup>*</sup></span>
+                        </p>
+                        <!-- <div id="countbox" class="timerbox flex flex-between sgb"></div> -->
+                        <input placeholder="Ваше имя:" type="text" name="name" maxlength="30" class="name">
+                        <input placeholder="Ваш телефон:" type="text" name="phone" required="" minlength="10" maxlength="20" class="phone">
+                        <button class="button upp white hrbl px24">заказать<img src="assets/images/btn-arr.png" alt=""></button>
+                        <p class="pack hrl px16 upp">осталось <span class="hrbl"><span class="left-pack">3</span> упаковки</span> по акции*</p>
+                        <p class="akcia hrl px18 black center">*при заказе курса</p>
+                        
+                    </form>
+                    <div class="arr"><img src="assets/images/mango.png" alt=""></div>
+                    <div class="box2"><img src="assets/images/box-new.png" alt="">
+                        <div class="sticker px20 center hrb lh140 white flex flex-mid flex-center">
+                            <p><span class="upp px32">Акция!<sup>*</sup></span>
+                                <br>Всего за 1 руб!
+                                <br><span class="through hrr">2300 руб.</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <ul class="flex flex-between flex-wrap flex-mid white">
+                <li class="p1 alleft">
+                    <p class="title px24">Как мы работаем:</p>
+                    <ul class="list px14 lh140 flex flex-left flex-wrap flex-mid">
+                        <li>Вы оставляете заявку на сайте с помощью формы заказа</li>
+                        <li>С вами связывается специалист марки и отвечает на все ваши вопросы, помогает оформить доставку</li>
+                        <li>Отправляем ваш заказ почтовой или курьерской службой. <br>Оплата — только при получении товара.</li>
+                    </ul>
+                </li>
+
+                <li class="p3">
+                    <p class="px14 lh140">Владелец СГР - ООО «Фармацевтический холдинг Джи Эл Эс Медикал», ОГРН 1187746706510. Адрес: РФ, 108811, г. Москва, п. Московский, Киевское шоссе, 22-й км, домовладение 4, строение 2, этаж 8, блок В, офис 809В/4, помещение №14</p>
+                    <p><a class="white" data-fancybox="" data-src="#policy">Политика конфиденциальности</a></p>
+                    <p><a class="white" href="assets/images/certificate1.jpg" data-fancybox="gallery2">Cертификаты</a></p>
+                    <a class="white" href="assets/images/certificate2.jpg" data-fancybox="gallery2"></a>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="bad">
+            <img src="assets/images/bad.png" alt="">
+        </div>
+    </footer>
+
+    <script>
+        function next() {
+            $(".block2 .desc2").fadeOut(0);
+            $(".quest").fadeOut(0);
+            $(".block3").fadeIn();
+        };
+    </script>
+
+    <script  src="assets/js/custom.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+        var owl_insta = $(".reviews-insta");
+          owl_insta.owlCarousel({    
+            nav: true,
+            dots: false,
+            items: 5,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 4000,
+            margin: 0,
+            lazyLoad: true,
+            loop: true,
+            responsiveBaseWidth: '.wrap',
+            responsive:{0:{items:1}, 620:{items: 2}, 980:{items:3}, 1200:{items:4},1600:{items:5}}
+          });
+
+          var owl_reviews = $(".reviews-buyer");
+          owl_reviews.owlCarousel({    
+            nav: true,
+            dots: false,
+            items: 1,
+            autoplay: false,
+            autoHeight: true,
+            /*autoplayHoverPause: true,
+            autoplayTimeout: 10000,*/
+            margin: 0,
+            lazyLoad: true,
+            loop: false,
+            responsiveBaseWidth: '.wrap',
+            responsive:{0:{nav:false, dots: true}, 719:{nav: true, dots: false,}}
+          });
+        });
+    </script>
+<script src="https://snippet.infothroat.com/dist/api/lead.min.js"></script>
+<script>
+    drlead.init({
+        params: {
+            token: "NJJLMZMWY2ITOWQ0NI00Y2FKLTG4NJMTMDC4OTA2MGI5MJDK", // required
+            stream_code: "g5hw6", // required
+            thanks_page: "/thanks"
+        },
+        subs: {
+            sub1: drlead.queryGet("sub1"),
+            sub2: drlead.queryGet("sub2"),
+            sub3: drlead.queryGet("sub3"),
+            sub4: drlead.queryGet("sub4"),
+            sub5: drlead.queryGet("sub5")
+        },
+        callback: function (error, response) {
+
+        },
+        before: function () {
+            // before request done
+        }
+    });
+</script>
+
+</body>
+
+</html>
